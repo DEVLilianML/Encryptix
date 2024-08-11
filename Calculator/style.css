@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(Assets/mine.png);
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.cal-container {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+.display {
+    background-color: blue;
+    color: white;
+    font-size: 2em;
+    padding: 20px;
+    text-align: right;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 70px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.btn {
+    padding: 20px;
+    font-size: 1.5em;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn:hover {
+    background-color: #eaeaea;
+}
+
+#clear {
+    grid-column: span 4;
+    background-color: #ff6666;
+    color: white;
+}
+
+#clear:hover {
+    background-color: #ff4d4d;
+}
